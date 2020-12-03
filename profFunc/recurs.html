@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recurse</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function sumTo(n){
+        if(n > 1){
+            sumTo(n - 1)
+        }else {
+            return n
+        }
+        let res = n + sumTo(n - 1);
+        console.log(res)
+        return res
+    }
+
+    sumTo(4)
+    // sumTo(100)
+</script>

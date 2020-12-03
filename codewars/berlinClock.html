@@ -3,10 +3,18 @@
 // berlinClock("00:00:00"), "Y\nOOOO\nOOOO\nOOOOOOOOOOO\nOOOO")
 // berlinClock("22:32:45"),"O\nRRRR\nRROO\nYYRYYROOOOO\nYYOO")
 
-// function berlinClock(){
-//     let res = `${hour}/${min}/${sec}` 
-//     let sec ;
-//     let hour ;
-//     let min ;
-// }
+function berlinClock(n){
+    let str = n.split(':')
+    console.log(str[2])
+    let sec =  ((n.split(':')[2] % 2) == 0) ? 'R' : '0' ;
+    console.log(24/5)
+    console.log(str[0]%5)
+    let hour4 ;
+    let hour = 0;
+    let min5 = 0;
+    let min = 0;
+    let res = `${sec}\\${hour4}\\${hour}\\${min5}\\${min}` 
+    console.log(res)
+}
+berlinClock("10:56:00");
 </script>
