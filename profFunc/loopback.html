@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recurse</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function loopback(){
+        let count = 0;
+        return ()=>{
+            return count++;
+        }
+    }
+    let bla = loopback()
+    console.log(bla())
+    console.log(bla())
+    console.log(bla()) 
+
+</script>

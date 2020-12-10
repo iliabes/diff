@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recurse</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    async function f(){
+        setInterval(()=>{await Promise.resolve('qqqqq') },2000)
+        
+    }
+    f().then((value)=>{console.log("val:"+value)})
+</script>
