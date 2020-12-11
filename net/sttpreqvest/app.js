@@ -19,6 +19,6 @@ app.listen(port,()=>{
 })
 
 app.use('/',(req,res)=>{
-  console.log('12313')
+  console.log('use /')
   res.sendFile(__dirname + '/public/index.html')
 })

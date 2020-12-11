@@ -10,16 +10,16 @@
     <h1 id="h1">http1</h1>
     <script>
         let user = {
-            name: 'John',
-            surname: 'Smith'
+            name: '1',
+            surname: '1'
         };
         let h1 = document.getElementById('h1');
         h1.addEventListener('click',f)
         function f(){
-            let xhr = new XMLHttpRequest();
-            xhr.open('post','/');
-            xhr.setRequestHeader('Content-Type', 'application/json');
-            xhr.send(JSON.stringify(user))
+            let net = new XMLHttpRequest();
+            net.open('post','/');
+            net.setRequestHeader('Content-Type','application/json; charset=utf-8')
+            net.send(JSON.stringify(user))
         }
     </script>
 </body>
